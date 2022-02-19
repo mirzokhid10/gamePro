@@ -36,6 +36,11 @@
   letter-spacing: 0.1em;
   text-transform: capitalize;
   color: $text-color;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #ffb548;
+  }
 }
 
 .additionals {
@@ -90,6 +95,20 @@
 .hero-btn span {
   border-left: 1px solid #1a1917;
   padding-left: 6px;
+}
+
+.hero-slide {
+  position: relative;
+
+  a {
+    position: relative;
+    margin: 0 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: red;
+  }
 }
 
 @media only screen and (max-width: 992px) {

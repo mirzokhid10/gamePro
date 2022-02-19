@@ -1,0 +1,44 @@
+.requirements {
+  @include section;
+  background-image: url(#{$hero-img}/reqbg.jpg);
+  @include bg;
+}
+
+.requirements-subtitle {
+  @include subtitle;
+}
+
+.requirements-title {
+  @include title;
+}
+
+.requirements-info {
+  margin: 133px 0 0 0;
+
+  div {
+    div {
+      border: 1px solid #979797;
+    }
+  }
+
+  & h1 {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+
+    color: #ffb548;
+  }
+
+  & p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin: 8px 0 0 0;
+  }
+}

@@ -1,0 +1,60 @@
+.features {
+  @include section;
+  background-image: url(#{$hero-img}/featuress.jpg);
+  @include bg;
+  height: 100%;
+}
+
+.features-content {
+  h5 {
+    @include subtitle;
+  }
+
+  h1 {
+    @include title;
+    margin: 9px 0 70px 0;
+  }
+}
+
+.accardion-lists {
+  list-style: none;
+  padding: 0;
+
+  .accardion-items {
+    position: relative;
+    padding: 0 0 0 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-color: $text-color;
+    }
+
+    .accardion-title {
+      @include actitle;
+      text-decoration: none;
+    }
+
+    .accardion-desc {
+      @include acdesc;
+    }
+  }
+}
+
+.slide-line {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 2px;
+    height: 220%;
+    background-color: $text-color;
+  }
+}

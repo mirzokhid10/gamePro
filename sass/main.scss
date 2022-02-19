@@ -1,6 +1,9 @@
 /*variables*/
 @import "_variables";
 
+/*mixins*/
+@import "_mixins";
+
 /*main code*/
 @import "_base";
 
@@ -10,3 +13,23 @@
 /*description*/
 
 @import "./blocks/desciption";
+
+/*features*/
+
+@import "./blocks/features";
+
+/*requirements*/
+
+@import "./blocks/requirements";
+
+/*quotes*/
+
+@import "./blocks/quotes";
+
+/*quotes*/
+
+@import "./blocks/subscribe";
+
+/*footer*/
+
+@import "./blocks/footer";
