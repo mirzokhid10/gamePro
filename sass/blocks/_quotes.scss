@@ -82,3 +82,33 @@
     opacity: 0.5;
   }
 }
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .quotes {
+    &-subtitle {
+      @include smsubtitle;
+    }
+
+    &-title {
+      @include smtitle;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+
+  .quotes {
+    &-subtitle {
+      @include smsubtitle;
+    }
+
+    &-title {
+      @include smtitle;
+    }
+  }
+}

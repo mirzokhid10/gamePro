@@ -38,3 +38,37 @@
     color: $primery-color;
   }
 }
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .quotes {
+    &-subtitle {
+      @include smsubtitle;
+    }
+
+    &-title {
+      @include smtitle;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+
+  .sub-img {
+    margin: 0 auto;
+  }
+
+  .quotes {
+    &-subtitle {
+      @include smsubtitle;
+    }
+
+    &-title {
+      @include smtitle;
+    }
+  }
+}

@@ -138,18 +138,31 @@ a {
   padding-left: 6px;
 }
 
-.hero-slide {
+.hero-slider {
+  list-style: none;
+  list-style-type: none;
+}
+
+.hero-slider .hero-slide {
   position: relative;
 }
 
-.hero-slide a {
+.hero-slider .hero-slide a {
   position: relative;
   margin: 0 10px;
+}
+
+.hero-slider .hero-slide a span {
+  display: inline-block;
+  margin: 0;
   width: 16px;
   height: 16px;
   border: 2px solid #fff;
   border-radius: 50%;
-  background-color: red;
+}
+
+.hero-slide.active a span {
+  background: #fff;
 }
 
 @media only screen and (max-width: 992px) {
@@ -175,6 +188,9 @@ a {
 }
 
 @media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
   .hero-title {
     font-size: 33px;
     line-height: 33px;
@@ -182,6 +198,9 @@ a {
   .hero-subtitle {
     font-size: 18px;
     line-height: 18px;
+  }
+  .hero-content {
+    margin: 0 auto;
   }
 }
 
@@ -251,7 +270,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  background-size: 100% 123%;
 }
 
 .features-content h5 {
@@ -333,6 +352,80 @@ a {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 992px) {
+  .features-content h5 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .features-content h1 {
+    font-size: 65px;
+    line-height: 65px;
+    margin: 9px 0 70px 0;
+  }
+  .accardion-lists .accardion-items .accardion-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .accardion-lists .accardion-items .accardion-desc {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-content h5 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .features-content h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 9px 0 70px 0;
+  }
+  .accardion-lists .accardion-items .accardion-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .accardion-lists .accardion-items .accardion-desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .features-content h5 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .features-content h1 {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 9px 0 70px 0;
+  }
+  .accardion-lists .accardion-items .accardion-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .accardion-lists .accardion-items .accardion-desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #ffffff;
+}
+
 /*requirements*/
 .requirements {
   position: relative;
@@ -392,6 +485,75 @@ a {
   line-height: 22px;
   color: #ffffff;
   margin: 8px 0 0 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .requirements-subtitle {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .requirements-title {
+    font-size: 65px;
+    line-height: 65px;
+    margin: 9px 0 70px 0;
+  }
+  .requirements-info {
+    margin: 73px 0 0 0;
+  }
+  .requirements-info h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .requirements-info p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .requirements-subtitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .requirements-title {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 9px 0 70px 0;
+  }
+  .requirements-info {
+    margin: 23px 0 0 0;
+  }
+  .requirements-info h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .requirements-info p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .requirements-subtitle {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .requirements-title {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 9px 0 70px 0;
+  }
+  .requirements-info {
+    margin: 0px 0 0 0;
+  }
+  .requirements-info h1 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .requirements-info p {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 /*quotes*/
@@ -495,6 +657,53 @@ a {
   opacity: 0.5;
 }
 
+@media only screen and (max-width: 768px) {
+  .quotes-subtitle {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .quotes-title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+  .quotes-subtitle {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .quotes-title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
 /*quotes*/
 .subscribe {
   position: relative;
@@ -553,10 +762,61 @@ a {
   color: #ffb548;
 }
 
+@media only screen and (max-width: 768px) {
+  .quotes-subtitle {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .quotes-title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+  .sub-img {
+    margin: 0 auto;
+  }
+  .quotes-subtitle {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .quotes-title {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
 /*footer*/
 .footer-links {
   position: relative;
   margin: 0;
+  padding: 0;
 }
 
 .footer-links .footer-link a {
@@ -599,6 +859,7 @@ a {
 .footer-social,
 .footer-links {
   list-style: none;
+  padding: 0;
 }
 
 .footer-privacy {

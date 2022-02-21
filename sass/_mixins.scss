@@ -52,3 +52,66 @@
   height: auto;
   padding: 125px 0;
 }
+
+@mixin mdsubtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: $text-color;
+}
+
+@mixin mdtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 55px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+@mixin smsubtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: $text-color;
+}
+
+@mixin smtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+@mixin xssubtitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: $text-color;
+}
+
+@mixin xstitle {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $text-color;
+}

@@ -97,17 +97,37 @@
   padding-left: 6px;
 }
 
-.hero-slide {
-  position: relative;
+.hero-slider {
+  list-style: none;
+  list-style-type: none;
 
-  a {
+  .hero-slide {
     position: relative;
-    margin: 0 10px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-color: red;
+
+    & a {
+      position: relative;
+      margin: 0 10px;
+
+      span {
+        display: inline-block;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+
+      &:first-child {
+      }
+    }
+  }
+}
+
+.hero-slide.active {
+  a {
+    span {
+      background: #fff;
+    }
   }
 }
 
@@ -137,6 +157,7 @@
 
 @media only screen and (max-width: 576px) {
   .container {
+    width: 98%;
   }
   .hero-title {
     font-size: 33px;
@@ -146,5 +167,9 @@
   .hero-subtitle {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  .hero-content {
+    margin: 0 auto;
   }
 }

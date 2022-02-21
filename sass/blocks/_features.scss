@@ -2,7 +2,7 @@
   @include section;
   background-image: url(#{$hero-img}/featuress.jpg);
   @include bg;
-  height: 100%;
+  background-size: 100% 123%;
 }
 
 .features-content {
@@ -57,4 +57,93 @@
     height: 220%;
     background-color: $text-color;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .features-content {
+    h5 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    h1 {
+      font-size: 65px;
+      line-height: 65px;
+      margin: 9px 0 70px 0;
+    }
+  }
+
+  .accardion-lists {
+    .accardion-items {
+      .accardion-title {
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      .accardion-desc {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+  @include acdesc;
+}
+
+@media only screen and (max-width: 768px) {
+  .features-content {
+    h5 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+      margin: 9px 0 70px 0;
+    }
+  }
+
+  .accardion-lists {
+    .accardion-items {
+      .accardion-title {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      .accardion-desc {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .features-content {
+    h5 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    h1 {
+      font-size: 35px;
+      line-height: 35px;
+      margin: 9px 0 70px 0;
+    }
+  }
+
+  .accardion-lists {
+    .accardion-items {
+      .accardion-title {
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      .accardion-desc {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+  @include acdesc;
 }
